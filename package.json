@@ -1,0 +1,41 @@
+{
+  "name": "cn-code",
+  "version": "1.0.0",
+  "description": "A UI for the shadcn component library, and more 🥳.",
+  "main": "extension.js",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.openReactPanel"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.openReactPanel",
+        "title": "Open React Panel"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "package": "vsce package"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "vscode": "^1.1.37",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.19",
+    "@types/react-dom": "^18.2.7",
+    "@vscode/vsce": "^2.20.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
